@@ -8,7 +8,7 @@ const PlayerDiv = styled.div`
     align-items: center;
     border: 1px solid black;
     border-radius: .5rem;
-    width: 30%;
+    width: 40%;
     height: 3rem;
     margin-top: 1rem;
     padding: 1rem;
@@ -23,7 +23,7 @@ function Player({ player }) {
         <PlayerDiv>
             <Info>{name}</Info>
             <Info>{country}</Info>
-            <Info>{searches}</Info>
+            <Info>{searches} searches</Info>
         </PlayerDiv>
     )
 }

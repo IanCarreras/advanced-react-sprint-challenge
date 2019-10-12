@@ -11,7 +11,7 @@ const PlayersDiv = styled.div`
 
 function Players({ players }) {
     if(!players) return <h1>Loading...</h1>
-    console.log(players)
+
     return (
         <PlayersDiv>
             {

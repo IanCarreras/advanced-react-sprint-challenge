@@ -10,3 +10,8 @@ test('App renders Players component', () => {
     const div = document.createElement('div');
     ReactDOM.render(<Players />, div)
 })
+
+test('players component has props', () => {
+    const component = rtl.render(<Players />)
+    expect(component.props)
+})
