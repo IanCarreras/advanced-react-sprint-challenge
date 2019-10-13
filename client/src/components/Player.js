@@ -13,17 +13,14 @@ const PlayerDiv = styled.div`
     margin-top: 1rem;
     padding: 1rem;
 `
-const Info = styled.div`
-    
-`
 
 function Player({ player }) {
     const { country, name, searches } = player
     return (
-        <PlayerDiv>
-            <Info>{name}</Info>
-            <Info>{country}</Info>
-            <Info>{searches} searches</Info>
+        <PlayerDiv >
+            <p>{name}</p>
+            <p>{country}</p>
+            <p>{searches} searches</p>
         </PlayerDiv>
     )
 }
